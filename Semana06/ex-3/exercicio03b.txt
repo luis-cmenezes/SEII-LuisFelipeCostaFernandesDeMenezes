@@ -1,0 +1,5 @@
+1) O limite de bytes a serem enviados por pacotes TCP é determinado pelo MSS (Maximum Segment Size), que é geralmente definido pelo sistema operacional e pode variar, mas é comum ser de 1460 bytes. Já no UDP, o tamanho do pacote é limitado pelo MTU (Maximum Transmission Unit) da rede, que também pode variar, mas é frequentemente cerca de 1500 bytes.
+
+2) Um arquivo grande pode ser transmitido via internet dividindo-o em partes menores chamadas de segmentos e enviando-os sequencialmente.
+
+3) A diferença entre as implementações TCP e UDP para esse problema é que o TCP oferece controle de congestionamento, garantia de entrega e retransmissão de pacotes perdidos, o que torna a transmissão mais confiável, porém potencialmente mais lenta. Enquanto isso, o UDP não oferece essas garantias, o que o torna mais rápido, mas menos confiável, pois os pacotes perdidos não são retransmitidos automaticamente.
