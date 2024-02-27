@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abóbora - Homepage</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Customize CSS here */
+    .navbar-brand img {
+      max-width: 40px;
+      margin-right: 10px;
+    }
+
+    .navbar {
+      background-color: #F9A825 !important;
+      /* Cor de fundo relacionada à abóbora */
+    }
+
+    .navbar-nav .nav-link {
+      color: #000000 !important;
+      /* Cor do texto na barra de navegação */
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ffffff !important;
+      /* Cor do texto na barra de navegação ao passar o mouse */
+    }
+
+    .carousel-image {
+      width: 100%;
+      height: 90%;
+      /* Defina a altura desejada */
+      object-fit: cover;
+      /* Para manter a proporção da imagem */
+    }
+
+    /* Estilizando o texto entre a barra de navegação e o carrossel */
+    .custom-background {
+      background-color: #FFD180;
+      /* Cor de fundo relacionada à abóbora, mas mais leve */
+      padding: 20px;
+      /* Espaçamento interno */
+    }
+
+    .large-font {
+      font-size: 24px;
+      /* Defina o tamanho de fonte desejado */
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+    <a class="navbar-brand" href="#">
+      <img src="content/pumpkin_icon.png" alt="Pumpkin Icon">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Homepage</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recipes.html">Receitas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="curiosities.html">Curiosidades</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Adicionando um texto entre a barra de navegação e o carrossel -->
+  <div class="container-fluid custom-background">
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-center font-weight-bold large-font">ESTE É UM SITE DEDICADO À ABÓBORAS: A MARAVILHA CULINÁRIA
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Carrossel de imagens -->
+  <div id="carouselExampleIndicators" class="carousel slide container-fluid px-0" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="content/carousel1.png" class="d-block w-100 carousel-image" alt="Image 1">
+      </div>
+      <div class="carousel-item">
+        <img src="content/carousel2.png" class="d-block w-100 carousel-image" alt="Image 2">
+      </div>
+      <div class="carousel-item">
+        <img src="content/carousel3.png" class="d-block w-100 carousel-image" alt="Image 3">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <footer class="container-fluid bg-dark text-light p-3">
+    <div class="container text-center">
+      <p>Projeto de Luis Felipe Costa Fernandes de Menezes</p>
+      <p> <a href="https://github.com/luis-cmenezes/SEII-LuisFelipeCostaFernandesDeMenezes" class="text-light"
+          target="_blank"> Confira o código-fonte no GitHub</a>.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
